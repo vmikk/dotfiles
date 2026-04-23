@@ -1,0 +1,20 @@
+# A TOML linter such as https://taplo.tamasfe.dev/ can use this schema to validate your config.
+# If you encounter any issues, please make an issue at https://github.com/yazi-rs/schemas.
+"$schema" = "https://yazi-rs.github.io/schemas/keymap.json"
+
+[mgr]
+
+prepend_keymap = [
+        { on = "<Home>",   run = "arrow top",            desc = "Move to the top of the list" },
+        { on = "<End>",    run = "arrow bot",            desc = "Move to the bottom of the list" },
+        { on = "<Delete>", run = "remove --permanently", desc = "Permanently delete selected files" },
+        { on = "<Space>",  run = [ "toggle", "arrow 1"], desc = "Select/deselect files" },
+        { on = "<Insert>", run = [ "toggle", "arrow 1"], desc = "Select/deselect files" },
+        { on = "<Enter>",  run = "open",                 desc = "Open file" },
+        { on = "i",        run = 'open --hovered',       desc = "Open hovered via rules" },
+      # { on = "i",        run = 'shell --block -- ov --line-number --wrap=false %h', desc = "View hovered with ov" },
+      # { on = "i",        run = "open",                 desc = "Open file" },
+      # { on = "<Enter>",  run = "plugin toggle-pane max-preview",   desc = "Maximize or restore preview" },
+
+	{ on = [ "c", "t" ], run = "plugin symlink-target-path", desc = "Copy symlink target paths" },
+]

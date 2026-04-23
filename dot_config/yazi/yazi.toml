@@ -1,0 +1,64 @@
+# A TOML linter such as https://taplo.tamasfe.dev/ can use this schema to validate your config.
+# If you encounter any issues, please make an issue at https://github.com/yazi-rs/schemas.
+"$schema" = "https://yazi-rs.github.io/schemas/yazi.json"
+
+[mgr]
+ratio          = [ 1, 5, 7 ]
+sort_by        = "natural"
+linemode       = "mtime"
+show_hidden    = true
+
+[opener]
+# BLAST results (m8 and m8.gz) with ov table options
+m8_ov = [ { run = 'ov --wrap=false -c --column-delimiter "\t" --header-column 1 --align --alternate-rows --column-rainbow %s1', block = true, for = "unix" } ]
+
+# TSV (and .tsv.gz) with ov table options
+tsv_ov = [ { run = 'ov --wrap=false -c --column-delimiter "\t" --header 1 --align --alternate-rows --column-rainbow %s1', block = true, for = "unix" } ]
+
+# CSV (and .csv.gz) with ov table options
+csv_ov = [ { run = 'ov --wrap=false -c --column-delimiter , --header 1 --align --alternate-rows --column-rainbow %s1', block = true, for = "unix" } ]
+
+# Fallback for everything else
+ov_default = [ { run = 'ov --line-number --wrap=false %s1', block = true, for = "unix" } ]
+
+
+
+[open]
+# Match extensions first, then fall back to the generic ov rule
+prepend_rules = [
+  { url = "*.tsv",    use = "tsv_ov" },
+  { url = "*.tsv.gz", use = "tsv_ov" },
+  { url = "*.m8",     use = "m8_ov"  },
+  { url = "*.m8.gz",  use = "m8_ov"  },
+  { url = "*.csv",    use = "csv_ov" },
+  { url = "*.csv.gz", use = "csv_ov" },
+  { url = "*",        use = "ov_default" },
+]
+
+[plugin]
+prepend_previewers = [
+	# Sequences
+	# { url = "*.{fa,fasta,fq,fastq}.gz", run = "zless-preview" },
+    { url = "*.{fa,fasta,fq,fastq}.gz", run  = 'piper -- zless -S "$1"' },
+
+	# Compressed txt files
+    # { url = "*.txt.gz", run = "zless-preview" },
+    { url = "*.txt.gz", run  = 'piper -- zless -S "$1"' },
+
+	# SLURM logs
+    { url = "**/slurm*.out", run = "zless-preview" },
+
+    # BLAST output
+    { url = "*.m8{,.gz}", run = "zless-preview" },
+
+	# CSV and TSV files
+    # { url = "*.tsv", run = "duckdb" },
+    # { mime = "text/csv", run = "miller" },
+
+    # Parquet
+    { url = "*.parquet", run = "duckdb" },
+
+    # Tarballs
+    { url = "*.tar*", run  = 'piper --format=url -- tar tf "$1"' },
+
+]

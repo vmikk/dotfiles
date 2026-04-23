@@ -1,0 +1,32 @@
+[[plugin.deps]]
+use = "yazi-rs/plugins:max-preview"
+rev = "2730199"
+hash = "a8025f2bb311e869069364fba01abffc"
+
+[[plugin.deps]]
+use = "wylie102/duckdb"
+rev = "eaa748c"
+hash = "4f80b6483ead6be7958f76f71080a817"
+
+[[plugin.deps]]
+use = "vmikk/zless-preview"
+rev = "abf48ba"
+hash = "a69ff46c99cdf1ec020ecaddf19ae985"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:piper"
+rev = "d7588f6"
+hash = "2143a53182dbbe935a1abd1623424aa5"
+
+[[plugin.deps]]
+use = "imsi32/yatline"
+rev = "88bd1c5"
+hash = "981acbe9b758b1af3a8154c932bb936d"
+
+[[plugin.deps]]
+use = "vmikk/symlink-target-path"
+rev = "083e09e"
+hash = "7b0c09c6e22b371d618f61e8734b77b8"
+
+[flavor]
+deps = []
