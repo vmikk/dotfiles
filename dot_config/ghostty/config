@@ -1,0 +1,15 @@
+# Configuration file for Ghostty
+#
+## Docs: https://ghostty.org/docs/config
+## To view a list of all available config options and their default values
+# ghostty +show-config --default --docs
+
+maximize        = true
+window-width  = 132
+window-height = 30
+# window-save-state = always
+
+font-family = "JetBrains Mono"
+font-size   = 18
+font-feature = -calt, -liga, -dlig
+clipboard-paste-protection = false
