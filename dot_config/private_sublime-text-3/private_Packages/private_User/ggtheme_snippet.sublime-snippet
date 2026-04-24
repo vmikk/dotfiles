@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+theme_set(theme_classic(base_size = 14))
+]]></content>
+	<tabTrigger>theme</tabTrigger>
+	<scope>source.r</scope>
+</snippet>

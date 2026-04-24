@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+ddply(.data = , .variables = , .fun = , .progress = "text")
+]]></content>
+	<tabTrigger>ddp</tabTrigger>
+	<scope>source.r</scope>
+</snippet>

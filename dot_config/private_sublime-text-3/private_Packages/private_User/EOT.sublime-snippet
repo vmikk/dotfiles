@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+cat > run_nf.sh <<'EOT'
+#!/bin/bash
+
+EOT
+
+chmod +x run_nf.sh
+]]></content>
+	<tabTrigger>EOT</tabTrigger>
+	<scope>source.shell</scope>
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+png(filename = ".png", width = , height = )
+	
+dev.off()
+]]></content>
+	<tabTrigger>png</tabTrigger>
+	<scope>source.r</scope>
+</snippet>

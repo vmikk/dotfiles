@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+attr(x, which = "") <-
+]]></content>
+	<tabTrigger>attr</tabTrigger>
+	<scope>source.r</scope>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+writeXStringSet(
+  x = ,
+  filepath = "",
+  compress = TRUE,
+  format = "fasta",
+  width = 9999)
+]]></content>
+	<tabTrigger>xstr</tabTrigger>
+	<tabTrigger>fasta</tabTrigger>
+	<scope>source.r</scope>
+</snippet>

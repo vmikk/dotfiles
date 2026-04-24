@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+dlply(.data = , .variables = , .fun = , .progress = "text")
+]]></content>
+	<tabTrigger>dlp</tabTrigger>
+	<scope>source.r</scope>
+</snippet>

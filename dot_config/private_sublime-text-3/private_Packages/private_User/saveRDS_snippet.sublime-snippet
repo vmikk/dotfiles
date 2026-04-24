@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+saveRDS(object = , file = "", compress = "xz")
+]]></content>
+	<tabTrigger>save</tabTrigger>
+	<scope>source.r</scope>
+</snippet>

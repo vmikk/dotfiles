@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+readDNAStringSet(filepath = "")
+]]></content>
+	<tabTrigger>readDNA</tabTrigger>
+	<tabTrigger>fasta</tabTrigger>
+	<scope>source.r</scope>
+</snippet>

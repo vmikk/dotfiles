@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+melt(data = , id.vars = , measure.vars = , variable.name = "Variable", value.name = "Value")
+]]></content>
+	<tabTrigger>melt</tabTrigger>
+	<scope>source.r</scope>
+</snippet>
+
+

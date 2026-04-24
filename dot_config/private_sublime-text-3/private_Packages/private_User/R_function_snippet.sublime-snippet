@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+- function(x){
+
+return()
+}
+]]></content>
+	<tabTrigger>- fu</tabTrigger>
+	<scope>source.r</scope>
+</snippet>

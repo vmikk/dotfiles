@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+write.xlsx(list(
+  "" =
+  ),
+  file = file.path(, ".xlsx"), colNames = TRUE)
+]]></content>
+	<tabTrigger>xlsx</tabTrigger>
+	<scope>source.r</scope>
+</snippet>

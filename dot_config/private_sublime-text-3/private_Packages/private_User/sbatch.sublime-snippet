@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+sbatch \
+  --job-name=jj -p amd \
+  --ntasks-per-node=10 --nodes=1 \
+  --mem=10G --time=03:00:00 \
+]]></content>
+	<tabTrigger>sbatch</tabTrigger>
+	<scope>source.shell</scope>
+</snippet>

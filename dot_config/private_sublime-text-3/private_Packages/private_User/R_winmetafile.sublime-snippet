@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+win.metafile(filename = ".emf")
+	
+dev.off()
+]]></content>
+	<tabTrigger>win</tabTrigger>
+	<scope>source.r</scope>
+</snippet>

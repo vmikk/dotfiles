@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+pdf(file = ".pdf", width = , height = , useDingbats = T)
+	
+dev.off()
+]]></content>
+	<tabTrigger>pdf</tabTrigger>
+	<scope>source.r</scope>
+</snippet>

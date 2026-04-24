@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+readxl::read_excel(
+	path = "",
+	na = c("", " ", "NA", "#N/A"))
+]]></content>
+	<tabTrigger>readxl</tabTrigger>
+	<scope>source.r</scope>
+</snippet>

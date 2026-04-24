@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+qs::qsave(df1, "out.qs", preset = "custom", algorithm = "zstd", compress_level = 14L, nthreads = 8L)
+# qs::qread("out.qs")
+]]></content>
+	<tabTrigger>qs</tabTrigger>
+	<scope>source.r</scope>
+</snippet>

@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+session.info <- sessionInfo()		# Collect Information About the Current R Session
+
+# save R-workspace
+save.image(paste("Workspace_",
+			format(Sys.Date(), "%y%m%d"),".RData", sep=""), compress = "xz")
+]]></content>
+		<tabTrigger>session</tabTrigger>
+		<scope>source.r</scope>
+</snippet>

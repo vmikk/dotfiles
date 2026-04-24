@@ -1,0 +1,20 @@
+<snippet>
+	<content><![CDATA[
+job::job({
+  # Job-specific settings
+  options(mc.cores = 3)
+
+  # Compute stuff
+  ...
+
+  # Control what is returned to the main session
+  job::export(c(out1, out2))
+}, 
+  # Control what is imported into the job
+  # Defualt, "all"; can be NULL
+  import = c(data, model)
+)
+]]></content>
+	<tabTrigger>job</tabTrigger>
+	<scope>source.r</scope>
+</snippet>

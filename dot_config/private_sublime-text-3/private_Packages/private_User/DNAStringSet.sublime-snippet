@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+DNAStringSet(x = )
+names() <- 
+]]></content>
+	<tabTrigger>DNA</tabTrigger>
+	<scope>source.r</scope>
+</snippet>

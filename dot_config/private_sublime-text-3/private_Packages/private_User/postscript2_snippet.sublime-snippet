@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+postscript(".eps", horizontal = F)
+	
+dev.off()
+]]></content>
+	<tabTrigger>eps</tabTrigger>
+	<scope>source.r</scope>
+</snippet>

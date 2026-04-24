@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+ggsave(filename = ".pdf", plot = , width = , height = , useDingbats = T)
+]]></content>
+	<tabTrigger>ggs</tabTrigger>
+	<scope>source.r</scope>
+</snippet>

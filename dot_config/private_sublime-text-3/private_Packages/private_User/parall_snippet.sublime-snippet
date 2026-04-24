@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[
+
+library(doFuture)
+library(progressr)
+handlers(global = TRUE)
+registerDoFuture()
+# plan(multisession, workers = 10)     # for RStudio
+plan(multicore, workers = 10)          # will crash RStudio
+options(future.globals.maxSize = 5e9)  # 5GB; default = 500 * 1024 ^ 2 = 500 MiB
+
+options(doFuture.rng.onMisuse = "ignore")
+
+llply(.data = , .fun = , .parallel = TRUE, .progress = "progressr")
+
+]]></content>
+	<tabTrigger>paral</tabTrigger>
+	<scope>source.r</scope>
+</snippet>

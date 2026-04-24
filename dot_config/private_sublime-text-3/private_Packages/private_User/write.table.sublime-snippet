@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+write.table(x = , file = ".txt", quote = F, sep = "\t", row.names = FALSE)
+]]></content>
+	<tabTrigger>write.table</tabTrigger>
+	<scope>source.r</scope>
+</snippet>
